@@ -1,0 +1,36 @@
+
+This program is an example of object-oriented programming in Java, where different classes are created to represent entities and their interactions. Let's break down the key components and their interactions:
+
+1. **Classes:**
+   - **University:** Represents a university and contains information about the university's name, a list of students, and a list of departments.
+   - **Department:** Represents a department within a university. It contains a name and a list of students enrolled in that department.
+   - **Student:** Represents a student with a name and a reference to the department they are enrolled in.
+   - **Main:** The main class with the `main` method, where the program execution starts. It creates university objects, departments, and enrolls students.
+
+2. **University Class:**
+   - The `University` class has an array list `studentsList` to store student objects and an array list `departmentsList` to store department objects.
+   - The constructor takes two arrays of strings representing student names and department names. It initializes student and department objects and adds them to the respective lists.
+   - The `getDepartment` method takes a department name as a parameter and returns the corresponding department object from the `departmentsList`.
+   - The `getStudents` method takes a student name as a parameter and returns the corresponding student object from the `studentsList`.
+   - The `enrollsIn` method enrolls a student in a department by setting the student's department and adding the student to the department's list of students.
+   - The `display` method iterates through the departments and calls the `display` method of each department to print the list of enrolled students.
+
+3. **Department Class:**
+   - The `Department` class contains a name and an array list `studentsList` to store student objects.
+   - The constructor initializes the department name.
+   - The `addStudents` method takes a student object and adds it to the `studentsList`.
+   - The `display` method iterates through the list of students and prints their names.
+
+4. **Student Class:**
+   - The `Student` class represents a student with a name and a reference to the department they are enrolled in.
+   - The constructor initializes the student's name.
+   - The `setDepartment` method takes a department object and sets it as the student's department.
+   - The `getName` method returns the student's name.
+
+5. **Main Class:**
+   - The `main` method initializes arrays of student and department names.
+   - It creates a `University` object named `muet` with the given student and department names.
+   - It enrolls students in departments using the `enrollsIn` method.
+   - Finally, it calls the `display` method of the university to print the list of enrolled students in each department.
+
+The program demonstrates the concept of classes, objects, object interaction, and encapsulation in object-oriented programming. It also showcases how classes can be designed to model real-world relationships and interactions.
