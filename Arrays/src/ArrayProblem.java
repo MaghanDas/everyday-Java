@@ -1,4 +1,3 @@
-// package com.parkash.question$1a;
 
 import java.util.Random;
 
